@@ -118,7 +118,6 @@ let screen4 = document.getElementById("pantalla4");
 
 
 /* FUNCION QUE CAMBIA A PANTALLA 2 DE LA CARRERA*/
-
 const cambiarPantalla2 = () => {
     screen1.style.display = "none";
     screen2.style.display = "block"
@@ -138,91 +137,6 @@ const cambiarPantalla4 = () => {
 }
 
 
-/* FUNCION SACAR IMAGEN COCHE1 PUESTA CON ONCLICK EN screen3A*/
-
-let fotoCoche1 = document.getElementById(coche1);
-
-
-const imprimeCoche1  = () => {
-
-   switch (player1) {
-        case coche1:
-            console.log("aparece kart1");// NO TRAE LA FOTO
-            break;
-        
-        case coche2:
-            console.log("aparece kart2");
-            break;
-
-        case coche3:
-            console.log("aparece kart3");
-            break;
-       
-        case coche4:
-            console.log("aparece kart4");
-            break;
-        
-        case coche5:
-            console.log("aparece kart5");
-            break;
-
-        case coche6:
-            console.log("aparece kart6");
-            break;   
-
-        case coche7:
-            console.log("aparece kart7");
-            break;
-
-        case coche8:
-             console.log("aparece kart8");
-            break;
-      }
-    }
-    
-   
-
-
-/* FUNCION SACAR IMAGEN COCHE2 PUESTA CON ONCLICK EN screen3C1 */
-const imprimeCoche2  = () => {
-
-    switch (player2) {
-         case coche1:
-             console.log("aparece 1")
-             break;
-         
-         case coche2:
-             console.log("aparece kart2");
-             break;
- 
-         case coche3:
-             console.log("aparece kart3");
-             break;
-        
-         case coche4:
-             console.log("aparece kart4");
-             break;
-         
-         case coche5:
-             console.log("aparece kart5");
-             break;
- 
-         case coche6:
-             console.log("aparece kart6");
-             break;   
- 
-         case coche7:
-             console.log("aparece kart7");
-             break;
- 
-         case coche8:
-              console.log("aparece kart8");
-             break;
-       }
-     }
-     
-    
-    
 
 /*FUNCION DE CARRERA*/
 const minMaxRoundedRandom = (min, max) => {
@@ -247,6 +161,136 @@ const correr = () => {
             ganador = player2.modelo
         }
     }
+}
+
+/* FUNCION SACAR IMAGEN COCHE1 PUESTA CON ONCLICK EN screen3A*/
+const imprimeCoche1  = () => {
+
+   switch (player1) {
+        case coche1:
+            console.log("aparece coche1");// NO TRAE LA FOTO
+            break;
+        
+        case coche2:
+            console.log("aparece coche2");
+            break;
+
+        case coche3:
+            console.log("aparece coche3");
+            break;
+       
+        case coche4:
+            console.log("aparece coche4");
+            break;
+        
+        case coche5:
+            console.log("aparece coche5");
+            break;
+
+        case coche6:
+            console.log("aparece coche6");
+            break;   
+
+        case coche7:
+            console.log("aparece coche7");
+            break;
+
+        case coche8:
+             console.log("aparece coche8");
+            break;
+      }
+    }
+       
+/* FUNCION SACAR IMAGEN COCHE2 PUESTA CON ONCLICK EN screen3C1 */
+const imprimeCoche2  = () => {
+
+    switch (player2) {
+         case coche1:
+             console.log("aparece coche1")
+             break;
+         
+         case coche2:
+             console.log("aparece coche2");
+             break;
+ 
+         case coche3:
+             console.log("aparece coche3");
+             break;
+        
+         case coche4:
+             console.log("aparece coche4");
+             break;
+         
+         case coche5:
+             console.log("aparece coche5");
+             break;
+ 
+         case coche6:
+             console.log("aparece coche6");
+             break;   
+ 
+         case coche7:
+             console.log("aparece coche7");
+             break;
+ 
+         case coche8:
+              console.log("aparece coche8");
+             break;
+       }
+     }
+     
+
+/*FUNCION QUE TRAE LA MARCA Y EL MODELO DEL KART1 SELECCIONADO (POR CONSOLE.LOG)*/
+/*function imprimeConstructor1() {
+    console.log("imprime marca y modelo del kart1")
+}*/
+
+const  imprimeConstructor1 = () => {
+
+    switch (player1) {
+         case coche1:
+             console.log("aaparece marca y modelo de coche1")
+             break;
+         
+         case coche2:
+             console.log("aparece marca y modelo de coche2");
+             break;
+ 
+         case coche3:
+             console.log("aparece marca y modelo de coche3");
+             break;
+        
+         case coche4:
+             console.log("aparece marca y modelo de coche4");
+             break;
+         
+         case coche5:
+             console.log("aparece marca y modelo de coche5);
+             break;
+ 
+         case coche6:
+             console.log("aparece marca y modelo de coche6");
+             break;   
+ 
+         case coche7:
+             console.log("aparece marca y modelo de coche7");
+             break;
+ 
+         case coche8:
+              console.log("aparece marca y modelo de coche8");
+             break;
+       }
+     }
+     
+
+
+
+
+
+     
+/*FUNCION QUE TRAE LA MARCA Y EL MODELO DEL KART2 SELECIONADO  (POR CONSOLE.LOG)*/
+function imprimeConstructor2() {
+    console.log("imprime marca y modelo del kart2")
 }
 
 /*FUNCIONES coche1*/
@@ -319,8 +363,7 @@ function cambiaColorOut8() {
     document.getElementById("coche8").style.backgroundColor = "black";
 }
 
-/*FUNCION CREAR ALERTA*/
-
+/*FUNCION CREAR ALERTA NO EJECUTADA TODAVIA*/
 function alertaPantalla2() {
     alert("Selecciona 2 jugadores y pulsa el mando para jugar");
 };
