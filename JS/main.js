@@ -1,5 +1,6 @@
 
 
+
 //AQUI SE DECLARA LA CLASE COCHE
 class Coche {
    
@@ -19,9 +20,6 @@ class Coche {
 
 };
 
-
-
-
 // AQUI SE CREAN LOS DIFERENTES COCHES 
 let coche1 = new Coche("Kart1","Marca1");
 let coche2 = new Coche("Kart2","Marca2");
@@ -32,15 +30,14 @@ let coche6 = new Coche("Kart6","Marca6");
 let coche7 = new Coche("Kart7","Marca7");
 let coche8 = new Coche("Kart8","Marca8");
 
-
 //Generando variables básicas de entorno
-
-let player1 = "";
+let player1 = "";//SACARLO A 
 
 let player2 = "";
 
 let ganador = "";
 
+//FUNCION SELECCION DE COCHE
 const selectCar1 = () => {
  if (player1 == "") {
     player1 = coche1;
@@ -59,7 +56,6 @@ const selectCar2 = () => {
     console.log("Kart2 seleccionado");
    }
    
-
    const selectCar3 = () => {
     if (player1 == "") {
        player1 = coche3;
@@ -69,7 +65,6 @@ const selectCar2 = () => {
     console.log("Kart3 seleccionado");
    }
    
-
    const selectCar4 = () => {
     if (player1 == "") {
        player1 = coche4;
@@ -106,7 +101,6 @@ const selectCar2 = () => {
     console.log("Kart7 seleccionado");
    }
    
-
    const selectCar8 = () => {
     if (player1 == "") {
        player1 = coche8;
@@ -144,8 +138,91 @@ const cambiarPantalla4 = () => {
 }
 
 
-/* FUNCION SACAR IMAGEN COCHE1*/
-/* FUNCION SACAR IMAGEN COCHE2*/
+/* FUNCION SACAR IMAGEN COCHE1 PUESTA CON ONCLICK EN screen3A*/
+
+let fotoCoche1 = document.getElementById(coche1);
+
+
+const imprimeCoche1  = () => {
+
+   switch (player1) {
+        case coche1:
+            console.log("aparece kart1");// NO TRAE LA FOTO
+            break;
+        
+        case coche2:
+            console.log("aparece kart2");
+            break;
+
+        case coche3:
+            console.log("aparece kart3");
+            break;
+       
+        case coche4:
+            console.log("aparece kart4");
+            break;
+        
+        case coche5:
+            console.log("aparece kart5");
+            break;
+
+        case coche6:
+            console.log("aparece kart6");
+            break;   
+
+        case coche7:
+            console.log("aparece kart7");
+            break;
+
+        case coche8:
+             console.log("aparece kart8");
+            break;
+      }
+    }
+    
+   
+
+
+/* FUNCION SACAR IMAGEN COCHE2 PUESTA CON ONCLICK EN screen3C1 */
+const imprimeCoche2  = () => {
+
+    switch (player2) {
+         case coche1:
+             console.log("aparece 1")
+             break;
+         
+         case coche2:
+             console.log("aparece kart2");
+             break;
+ 
+         case coche3:
+             console.log("aparece kart3");
+             break;
+        
+         case coche4:
+             console.log("aparece kart4");
+             break;
+         
+         case coche5:
+             console.log("aparece kart5");
+             break;
+ 
+         case coche6:
+             console.log("aparece kart6");
+             break;   
+ 
+         case coche7:
+             console.log("aparece kart7");
+             break;
+ 
+         case coche8:
+              console.log("aparece kart8");
+             break;
+       }
+     }
+     
+    
+    
 
 /*FUNCION DE CARRERA*/
 const minMaxRoundedRandom = (min, max) => {
@@ -171,9 +248,6 @@ const correr = () => {
         }
     }
 }
-
-
-
 
 /*FUNCIONES coche1*/
 function cambiaColorOver1() {
@@ -244,5 +318,12 @@ function cambiaColorOver8() {
 function cambiaColorOut8() {
     document.getElementById("coche8").style.backgroundColor = "black";
 }
+
+/*FUNCION CREAR ALERTA*/
+
+function alertaPantalla2() {
+    alert("Selecciona 2 jugadores y pulsa el mando para jugar");
+};
+
 
 
