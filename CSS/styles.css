@@ -1,0 +1,327 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.fotoInicio {
+    object-fit: fill;
+}
+.fotoCoche1 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche2 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche3 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche4 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche5 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche6 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche7 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+   .fotoCoche8 {
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid gray;
+    border-radius:50%;
+   }
+
+.fotoCoche1:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px white;
+    -webkit-box-shadow: 0px 0px 15px 15px white;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche2:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px yellow;
+    -webkit-box-shadow: 0px 0px 15px 15px yellow;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche3:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px blue;
+    -webkit-box-shadow: 0px 0px 15px 15px blue;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche4:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px green;
+    -webkit-box-shadow: 0px 0px 15px 15px green;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche5:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px palevioletred;
+    -webkit-box-shadow: 0px 0px 15px 15px pink;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche6:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px magenta;
+    -webkit-box-shadow: 0px 0px 15px 15px magenta;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche7:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px orange;
+    -webkit-box-shadow: 0px 0px 15px 15px orange;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.fotoCoche8:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px teal;
+    -webkit-box-shadow: 0px 0px 15px 15px teal;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+/* PANTALLA INICIO */
+
+.screen1 { 
+    /*background-color: pink;*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.screen1A {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen1B {
+    width: 100%;
+    height: 5em;
+    display:inline-block;
+    position:relative;
+}
+
+/*PANTALLA SELECCION*/
+
+.screen2 {
+    /*background-color: blue;*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen2A {
+    /*border: 2px solid white;*/
+    /*background-color: red;*/
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.screen2B {
+    /*border: 2px solid white;*/
+    /*background-color: red;*/
+    color: gray;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen2BCaja1 {
+    /*background-color: yellow;*/
+    width: 6em;
+    height: 6em;
+  }
+
+.fotoMando {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px red;
+    -webkit-box-shadow: 0px 0px 15px 15px red;
+    
+}
+
+.screen2C {
+    /*border: 2px solid white;*/
+    /*background-color: red;*/
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*PANTALLA CARRERA*/
+.screen3 {
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen3A {
+    border: 1px solid white;
+    width: 20em;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .screen3A1 {
+        border: 1px solid white;
+        width: 20em;
+        height: 50%;
+    }
+    
+    .screen3A2 {
+        border: 1px solid white;
+       width: 20em;
+        height: 50%; 
+    }
+    
+
+.screen3B {
+    
+    width: 50em;
+    height: 50em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.ganador {
+    border: 1px solid white;
+    height: 5em;
+    width: 8em;
+    text-align: center;
+    
+}
+
+
+
+.screen3C {
+    border: 1px solid white;
+    width: 20em;
+    height: 50em;
+}
+
+
+.screen3C1 {
+    border: 1px solid white;
+    width: 20em;
+    height: 50%;
+}
+
+.screen3C2 {
+    border: 1px solid white;
+   width: 20em;
+    height: 50%; 
+}
+
+
+
+/*PANTALLA RESULTADO*/
+
+.screen4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+}
+
+
+
+
+/*BOTON JUEGA*/
+
+.juega {
+    width: 10em;
+    height: 4em;
+    position: absolute;
+    bottom: 4em;
+    right: 55em;
+    background-color:#8F0005;
+    border-radius:1.5em;
+    color:white;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+}
+
+.juega:hover {
+    /*color: black !important;
+    box-shadow: 8px 8px 8px 8px white;
+    transition: all 0.2s ease;
+    box-shadow: 5px 5px 20px 15px black;*/
+
+    /*border-radius:50%;
+    -webkit-border-radius:50%;*/
+    box-shadow: 0px 0px 15px 15px red;
+    -webkit-box-shadow: 0px 0px 15px 15px red;
+    
+}

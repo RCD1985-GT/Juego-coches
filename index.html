@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Crash</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+ <audio src="assets/musica.mp3" autoplay></audio>
+
+    <!--PANTALA INICIO-->
+    <section id="pantalla1">
+        <div class="screen1">
+            <div class="screen1A">
+                <img class="fotoInicio" src="assets/IMG/screen1.jpg" alt="">
+            </div>
+            <div class="screen1B">
+                <button id="_juega" class="juega" onclick='cambiarPantalla2()'>¡Play Now!</button>
+            </div>
+        </div>
+    </section>
+
+    <!--PANTALA SELECCION-->
+
+    <section id="pantalla2" style="display: none;">
+        <div class="screen2">
+            <div class="screen2A">
+                <img id="coche1" class="fotoCoche1" src="assets/IMG/coche.png" onmouseover="cambiaColorOver1()" onmouseout="cambiaColorOut1()"  onclick="selectCar1()"/>
+                <img id="coche2" class="fotoCoche2" src="assets/IMG/coche.png" onmouseover="cambiaColorOver2()" onmouseout="cambiaColorOut2()" onclick="selectCar2()"/>
+                <img id="coche3" class="fotoCoche3" src="assets/IMG/coche.png" onmouseover="cambiaColorOver3()" onmouseout="cambiaColorOut3()" onclick="selectCar3()"/>
+                <img id="coche4" class="fotoCoche4" src="assets/IMG/coche.png" onmouseover="cambiaColorOver4()" onmouseout="cambiaColorOut4()"  onclick="selectCar4()"/>
+            </div>
+
+            <div class="screen2B">
+                <div class="screen2BCaja1">
+                    <img id="_mando" class="fotoMando" src="/assets/IMG/mando2.jpg" alt="" onclick='cambiarPantalla3()' >
+                </div>
+               
+            </div>
+
+            <div class="screen2C">
+                <img id="coche5" class="fotoCoche5" src="assets/IMG/coche.png" onmouseover="cambiaColorOver5()" onmouseout="cambiaColorOut5()"  onclick="selectCar5()"/>
+                <img id="coche6" class="fotoCoche6" src="assets/IMG/coche.png" onmouseover="cambiaColorOver6()" onmouseout="cambiaColorOut6()"  onclick="selectCar6()"/>
+                <img id="coche7" class="fotoCoche7" src="assets/IMG/coche.png" onmouseover="cambiaColorOver7()" onmouseout="cambiaColorOut7()"  onclick="selectCar7()"/>
+                <img id="coche8" class="fotoCoche8" src="assets/IMG/coche.png" onmouseover="cambiaColorOver8()" onmouseout="cambiaColorOut8()"  onclick="selectCar8()"/>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--PANTALA CARRERA-->
+    <section id="pantalla3" style="display: none;">
+        <div class="screen3">
+            <div class="screen3A">
+                <div class="screen3A1"></div>    
+                <div class="screen3A2"></div>  
+            </div>
+
+            <div class="screen3B">
+                <button id="_ganador" class="ganador" onclick='cambiarPantalla4()'>PINCHA AQUI  PARA RESULTADO</button>
+                <button id="_correr" class="ganador" onclick='correr()'>PINCHA AQUI  PARA CORRER</button>
+            </div>
+
+
+            <div class="screen3C">
+                <div class="screen3C1"></div>    
+                <div class="screen3C2"></div>  
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--PANTALA RESULTADO-->
+    <section id="pantalla4" style="display: none;">
+        <div class="screen4"></div>
+        </div>
+    </section>
+
+
+
+    <script src="/JS/main.js"></script>
+</body>
+
+</html>
